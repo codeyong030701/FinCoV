@@ -29,9 +29,6 @@ agreement over the evaluated neural and HMM-based baselines.
 
 Please download the PIG dataset from its official source.
 
-Due to dataset redistribution restrictions, the dataset is not included in
-this repository.
-
 Following the official PIG split, 120 pieces from the miscellaneous subset
 are used for training, while 30 pieces from the Bach, Mozart, and Chopin
 subsets are used for testing.
@@ -49,12 +46,10 @@ data/
 Separate models are trained for the right hand (RH) and left hand (LH).
 
 ```bash
-python train.py --pig_root data/pig --hand right --seed 123
-python train.py --pig_root data/pig --hand left --seed 123
+python train.py --pig_root data/pig --hand right --seed <seed>
+python train.py --pig_root data/pig --hand left --seed <seed>
 ```
 
-The experiments are repeated using three random seeds: `16745`, `3465`, and
-`123`.
 
 ## Evaluation
 
@@ -79,8 +74,3 @@ The main results on the official PIG test set are:
 | LH | 70.81 | 77.45 | 89.37 | 83.22 |
 | **Both** | **67.89** | **74.93** | **89.25** | **82.30** |
 
-## Note
-
-This repository provides the code for reproducing the main FinCov results
-reported on the PIG dataset. The PIG dataset and comparison-model
-implementations are not included.
