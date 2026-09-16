@@ -23,7 +23,7 @@ agreement over the evaluated neural and HMM-based baselines.
 
 ## Architecture
 
-![Overall architecture of FinCov](asset/overall.png)
+![Overall architecture of FinCov](fig/model.png)
 
 ## Data Preparation
 
