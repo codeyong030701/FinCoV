@@ -62,57 +62,5 @@ The main results on the official PIG benchmark are shown below.
   <img src="fig/result.png" width="100%">
 </p>
 
-## Training
 
-The Consensus Learning Module is trained separately for the right and left
-hands.
-
-### Right Hand
-
-```bash
-python train.py \
-  --hand right \
-  --pig_root data/pig \
-  --device cuda \
-  --out output/consensus_right/best.pt
-```
-
-### Left Hand
-
-```bash
-python train.py \
-  --hand left \
-  --pig_root data/pig \
-  --device cuda \
-  --out output/consensus_left/best.pt
-```
-
-## Evaluation
-
-FinCoV uses the learned consensus emissions together with second-order HMM
-transition statistics and transition regularization during structured decoding.
-
-### Top-1 Fingering
-
-For the right hand:
-
-```bash
-python evaluate.py \
-  --hand right \
-  --pig_root data/pig \
-  --checkpoint output/consensus_right/best.pt \
-  --device cuda \
-  --top_k 1
-```
-
-For the left hand:
-
-```bash
-python evaluate.py \
-  --hand left \
-  --pig_root data/pig \
-  --checkpoint output/consensus_left/best.pt \
-  --device cuda \
-  --top_k 1
-```
 
