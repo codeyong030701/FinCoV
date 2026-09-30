@@ -52,10 +52,6 @@ data/
 
 ## Results
 
-### PIG Benchmark
-
-## Results
-
 The main results on the official PIG benchmark are shown below.
 
 <p align="center">
