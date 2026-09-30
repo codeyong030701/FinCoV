@@ -31,7 +31,7 @@ FinCoV consists of three modules:
 ## Architecture
 
 <p align="center">
-  <img src="figure/frame.drawio%20(1).png" width="100%">
+  <img src="figure/frame.png" width="100%">
 </p>
 
 ## Data Preparation
